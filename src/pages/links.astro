@@ -1,0 +1,20 @@
+---
+// src/pages/links.astro
+import Base from '../layouts/Layout.astro';
+import data from '../config/links.json';
+---
+<Base title={data.title}>
+  <main class="min-h-screen flex items-center justify-center px-6 py-16">
+    <section class="w-full max-w-md text-center">
+      <h1 class="text-2xl font-semibold mb-2">{data.title}</h1>
+      {data.intro && <p class="opacity-80 mb-6">{data.intro}</p>}
+      <div class="flex flex-col gap-3">
+        {data.links.map((l) => (
+          <a href={l.href} class="block rounded-xl border px-4 py-3 hover:shadow">
+            {l.label}
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</Base>

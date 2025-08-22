@@ -1,0 +1,13 @@
+---
+// src/components/AboutIntro.astro
+const { name = "Your Name", tagline = "PM · SRE · Builder" } = Astro.props;
+---
+<section class="mx-auto max-w-3xl px-6 py-10 prose">
+  <h1>Hi, I’m {name}</h1>
+  <p class="lead">{tagline}</p>
+  <p>
+    I build reliable infra and practical AI products. Previously at Equinix.
+    I write about observability, IAM, and pragmatic product craft.
+  </p>
+  <p><a href="/blogs">Read the blog →</a> · <a href="/links">Links</a></p>
+</section>

@@ -1,0 +1,11 @@
+// src/config/links.json
+{
+  "title": "Find me online",
+  "intro": "Here's some shortcuts to my work and socials.",
+  "links": [
+    { "label": "Blog", "href": "/blogs" },
+    { "label": "GitHub", "href": "https://github.com/scarras91" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/sal-carrasco" },
+    { "label": "Email", "href": "mailto:scarras91@gmail.com" }
+  ]
+}
