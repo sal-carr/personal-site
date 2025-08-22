@@ -1,42 +1,42 @@
 {
     "basic": {
-        "name": "Paul Smith",
-        "job": "Software Engineer",
-        "summary": "Transforming challenges into opportunities with cutting-edge technology. Driven by a love for elegant, robust code.",
+        "name": "Sal Carrasco",
+        "job": "Product Leader - Cloud infrastructure, Storage, Observability & Identity",
+        "summary": "Pragmatic, vision-driven product leader with 10+ years of experience in building and scaling cloud infrastructure, storage, observability, and identity products. I've worked at a companies ranging from startups to my current role at a Fortune 500 company.",
         "cv_file_name": "paul_cv.pdf"
     },
     "experiences": [
         {
-            "title": "Senior Software Engineer",
-            "sub_title": "Tech Solutions Inc.",
+            "title": "Senior Product Manager",
+            "sub_title": "Equinix.",
             "years": "2021 - Present",
-            "details": "Led the development of a scalable e-commerce platform that increased sales by 30%. Worked with modern technologies including React, Node.js, and AWS."
+            "details": "Led infrastructure Product Management efforts for the digital services business unit for one of the world's largest data center and infrastructure companies, Equinix, a fortune 500 company. Worked with modern technologies across compute, networking, storage, observability, and identity."
         },
         {
-            "title": "Software Engineer",
-            "sub_title": "Innovate Labs",
+            "title": "Site Reliability Engineering Manager",
+            "sub_title": "Akamai Technologies",
             "years": "2018 - 2021",
-            "details": "Developed and maintained web applications for various clients. Key contributor in migrating legacy systems to cloud infrastructure."
+            "details": "Akamai is the world's largest and most trusted edge platform. Managed a team of SREs responsible for ensuring the reliability and performance of Akamai's cloud infrastructure, storage, and observability products."
         },
         {
-            "title": "Junior Developer",
-            "sub_title": "Creative Apps Studio",
-            "years": "2015 - 2018",
-            "details": "Worked on mobile app development, collaborating with design teams to create user-friendly applications."
+            "title": "Systems Operations Manager",
+            "sub_title": "Linode",
+            "years": "2014 - 2018",
+            "details": "Linode is a cloud hosting provider. Worked on various projects related to cloud infrastructure, storage, and observability."
         }
     ],
     "education": [
         {
             "title": "Bachelor of Science in Computer Science",
-            "sub_title": "University of Modern Tech",
-            "years": "2015 - 2019",
-            "details": "Graduated with honors. Specialized in software development, data structures, and algorithms. Worked on various open-source projects and completed internships in tech companies."
+            "sub_title": "Rowan University",
+            "years": "2009 - 2013",
+            "details": "Graduated with a minor in Mathematics and specilized in Programming Languages and Compiler Design."
         },
         {
-            "title": "Master of Science in Software Engineering",
-            "sub_title": "Global Tech Institute",
+            "title": "Certified Scrum Product Owner® (CSPO®)",
+            "sub_title": "Scrum Alliance",
             "years": "2019 - 2021",
-            "details": "Focused on advanced algorithms, cloud computing, and full-stack development. Published research papers on scalable microservices architecture."
+            "details": "Certified Scrum Product Owner® (CSPO®) from Scrum Alliance, demonstrating expertise in Agile methodologies and product ownership."
         }
     ],
     "projects": [
