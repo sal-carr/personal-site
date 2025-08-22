@@ -3,7 +3,7 @@ import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 
 export async function GET(context) {
-  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  const posts = await getCollection('blogs', ({ data }) => !('draft' in data) || !data.draft);
   return rss({
     title: 'Your Name — Blog',
     description: 'Writing on infra, observability, product and other randomness.',
@@ -12,7 +12,7 @@ export async function GET(context) {
       link: `/blog/${p.slug}/`,
       title: p.data.title,
       description: p.data.description,
-      pubDate: p.data.pubDate,
+      pubDate: new Date(p.data.datetime),
     })),
   });
 }
