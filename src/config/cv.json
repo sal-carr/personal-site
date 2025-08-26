@@ -2,27 +2,27 @@
     "basic": {
         "name": "Sal Carrasco",
         "job": "Product Leader - Cloud infrastructure, Storage, Observability & Identity",
-        "summary": "Pragmatic, vision-driven product leader with 10+ years of experience in building and scaling cloud infrastructure, storage, observability, and identity products. I've worked at a companies ranging from startups to my current role at a Fortune 500 company.",
-        "cv_file_name": "paul_cv.pdf"
+        "summary": "Pragmatic, vision-driven product leader with 10+ years of experience in building and scaling cloud infrastructure, storage, observability, and identity products. I’ve built my career across environments ranging from fast-moving startups to my current role within a Fortune 500 enterprise (Equinix).",
+        "cv_file_name": "Sal Carrasco Resume - Product Manager.pdf"
     },
     "experiences": [
         {
             "title": "Senior Product Manager",
             "sub_title": "Equinix.",
             "years": "2021 - Present",
-            "details": "Led infrastructure Product Management efforts for the digital services business unit for one of the world's largest data center and infrastructure companies, Equinix, a fortune 500 company. Worked with modern technologies across compute, networking, storage, observability, and identity."
+            "details": "Led various Product Management efforts for the digital services business unit for one of the world's largest data center and infrastructure companies, Equinix, a fortune 500 company. Worked with modern technologies across compute, networking, storage, observability, and identity."
         },
         {
             "title": "Site Reliability Engineering Manager",
             "sub_title": "Akamai Technologies",
             "years": "2018 - 2021",
-            "details": "Akamai is the world's largest and most trusted edge platform. Managed a team of SREs responsible for ensuring the reliability and performance of Akamai's cloud infrastructure, storage, and observability products."
+            "details": "Akamai is the world's largest and most trusted edge platform. While at Akamai I Managed a team of SREs responsible for ensuring the reliability and performance of Akamai's cloud infrastructure, storage, and observability products."
         },
         {
             "title": "Systems Operations Manager",
             "sub_title": "Linode",
             "years": "2014 - 2018",
-            "details": "Linode is a cloud hosting provider. Worked on various projects related to cloud infrastructure, storage, and observability."
+            "details": "Linode is a cloud hosting provider. Worked on various projects related to compute cloud infrastructure, storage, and observability."
         }
     ],
     "education": [
@@ -41,22 +41,22 @@
     ],
     "projects": [
         {
-            "imageUrl": "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=764&auto=format&fit=crop",
-            "title": "hello.com",
+            "imageUrl": "https://images.seeklogo.com/logo-png/30/1/equinix-logo-png_seeklogo-301179.png",
+            "title": "Equinix Observability",
             "type": "Website",
-            "link": "https://github.com/wasutz/astro-resume-theme"
+            "link": "https://docs.equinix.com/observability/"
         },
         {
-            "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=764&auto=format&fit=crop",
-            "title": "Paul UI kit collections",
-            "type": "UI Kit",
-            "link": "https://github.com/wasutz/astro-resume-theme"
+            "imageUrl": "https://images.seeklogo.com/logo-png/27/1/linode-logo-png_seeklogo-273607.png",
+            "title": "Linode Block Storage #1 in performance",
+            "type": "Website",
+            "link": "https://tfir.io/linode-has-the-fastest-nvme-based-block-storage-among-all-cloud-providers/"
         },
         {
-            "imageUrl": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=764&auto=format&fit=crop",
-            "title": "paul.com",
+            "imageUrl": "https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage/_jcr_content/root/responsivegrid/nv_container_392921705/nv_container/nv_image.coreimg.100.630.png/1703060329053/nvidia-logo-vert.png",
+            "title": "Linode GPUs (partnership with NVIDIA)",
             "type": "Website",
-            "link": "https://github.com/wasutz/astro-resume-theme"
+            "link": "https://blogs.nvidia.com/blog/linode-quadro-rtx/"
         }
     ],
     "menuItems": [
@@ -72,7 +72,7 @@
     "socialLinks": [
         {
             "iconName": "Github",
-            "link": "https://github.com/wasutz/astro-resume-theme"
+            "link": "https://github.com/sal-carr"
         },
         {
             "iconName": "Facebook",
