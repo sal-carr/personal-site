@@ -1,0 +1,129 @@
+---
+title: "How I Built This Site with Astro + Cloudflare (in < 1 Day)"
+description: "Why I built it, the steps I took, and a few lessons learned along the way."
+datetime: "2025-09-08"
+image: "/images/site-hero.png" # optional screenshot or graphic
+---
+## Table of Contents
+- [Intro & Motivation](#intro--motivation)
+- [Step-by-Step: How I Built This Site](#step-by-step-how-i-built-this-site)
+  - [1. Domain](#1-domain)
+  - [2. Bootstrapping Astro](#2-bootstrapping-astro)
+  - [3. Picking a Theme](#3-picking-a-theme)
+  - [4. Learning the Structure](#4-learning-the-structure)
+  - [5. Uploading to GitHub](#5-uploading-to-github)
+  - [6. Cloudflare Pages Setup](#6-cloudflare-pages-setup)
+  - [7. Pointing My Domain](#7-pointing-my-domain)
+  - [8. CI/CD in Action](#8-cicd-in-action)
+  - [9. Test Deployments & Fixes](#9-test-deployments--fixes)
+  - [10. Final Content](#10-final-content)
+- [A Note on Writing Posts](#a-note-on-writing-posts)
+- [Lessons Learned](#lessons-learned)
+- [Closing Thoughts](#closing-thoughts)
+
+## Intro & Motivation
+
+I’m on the hunt for a new job and I’ve found, through interviewing hundreds of people over the years, that you need to stand out in a sea of applicants. My personal website will serve as a place to showcase my work, thoughts on various topics, and will include rants on things I’m passionate about.  
+
+So if you’re hiring and my website made me stand out, welcome! I guess it’s working.  
+
+Now back to this guide. I consider myself to be a technical hands-on leader, so when I found out about a cool new tech in **Astro**, I wanted to check it out. My official review on it is that it’s **AWESOME**.  
+
+I was able to get everything in this guide done in less than a day (I obviously already had some know-how). But man, I was impressed with how easy it was to get up and running, and equally impressed with **Cloudflare Pages**. Well done, teams.  
+
+---
+
+## Contents
+
+---
+
+## Step-by-Step: How I Built This Site
+
+### 1. Domain
+First thing I did was buy a domain from Namecheap. Simple enough.  
+
+### 2. Bootstrapping Astro
+I used npm to spin up a new Astro project locally:
+```bash
+npm create astro@latest personal-site
+npm install
+npm run dev
+```
+
+At that point I was staring at the default starter site.
+
+3. Picking a Theme
+
+I went down the rabbit hole of themes, landed on wasutz/astro-resume-theme, and used Astro’s CLI to download and configure it. This gave me a solid landing/resume page out of the box.
+
+4. Learning the Structure
+
+Astro has a clean file structure:
+- src/layouts/ → page shells
+- src/pages/ → routes like /, /blog, /links
+- src/content/blogs/ → markdown posts
+- public/ → static assets like images
+
+Once I understood this, updating content was straightforward.
+
+5. Uploading to GitHub
+
+I initialized a repo and pushed the code up to GitHub. That set me up nicely for continuous deployment.
+
+6. Cloudflare Pages Setup
+
+Logged into my Cloudflare account, created a new Pages project, and linked it to the GitHub repo.
+	- Framework preset: Astro
+	- Build command: npm run build
+	- Output dir: dist
+
+7. Pointing My Domain
+
+I transferred the domain by updating nameservers in Namecheap to Cloudflare’s. From there, adding the custom domain in Pages was smooth—free SSL and instant HTTPS.
+
+8. CI/CD in Action
+
+With GitHub connected, every push to main auto-deployed. PRs gave me preview URLs. That feedback loop made fixing bugs quick.
+
+9. Test Deployments & Fixes
+
+I had a few little things to iron out:
+	- Layout import mismatch (Base.astro vs. Layout.astro).
+	- RSS schema differences (blogs + datetime instead of blog + pubDate).
+	- Converting config files from JSON to TS to avoid parse errors.
+
+After patching those, deploys went green.
+
+10. Final Content
+
+I updated the About section, pruned the example posts (kept them around as drafts), and polished up the blog and links pages. What you’re reading right now is the result.
+
+⸻
+
+A Note on Writing Posts
+	- Clickable image example:
+
+[![Screenshot of the site](/images/site-hero.png "Open repo")](https://github.com/scarras91/personal-site)
+
+
+	- Table of Contents: I wired up a plugin so any ## Contents heading expands into a list of headings below. That’s what you see at the top of this post.
+
+⸻
+
+Lessons Learned
+	- Keep examples, but hide them: I just add draft: true to their frontmatter and filter them out in queries.
+	- Astro content collections are great, but watch the schema (this theme uses datetime).
+	- Cloudflare Pages is honestly underrated—smoothest deploy experience I’ve had in a while.
+
+⸻
+
+Closing Thoughts
+
+In one day I went from “I should really have a personal site” to a polished About page, a blog, and a link hub, all backed by modern tooling and auto-deploys.
+
+Astro made it fun, Cloudflare made it effortless. If you’re on the fence about rolling your own site, my advice: just do it.
+
+And if you’re here because you’re evaluating me for a role—well, I guess the site did its job. 😉
+
+---
+

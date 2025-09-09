@@ -6,7 +6,7 @@ const { imageUrl, title, type, link } = Astro.props;
     <div class="relative overflow-hidden rounded-lg cursor-pointer h-64 group">
         <div 
             class="absolute inset-0 bg-cover transition-transform duration-700 group-hover:scale-110" 
-            style={`background-image: url('${imageUrl}');`}>
+            style={`background-image: url('${imageUrl}'); background-size: 100% 100%;`}>
         </div>
 
         <div
